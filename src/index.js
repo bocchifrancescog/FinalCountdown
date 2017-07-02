@@ -1,8 +1,11 @@
 import './css/index.css';
+import "./libs/semantic/dist/semantic.min.css";
+
 
 import React, { Component } from "react";
 import ReactDOM from 'react-dom';
 import CSSTransitionGroup from 'react-addons-css-transition-group';
+import MainPage from  "./components/MainPage";
 
 
 class App extends Component {
@@ -15,9 +18,7 @@ class App extends Component {
   render() {
     const { animationName } = this.state;
     return (
-      <div>
-        Hello!!
-      </div>
+      <MainPage />
     );
   };
 };
