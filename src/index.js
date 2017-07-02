@@ -1,12 +1,16 @@
 import './css/index.css';
 import "./libs/semantic/dist/semantic.min.css";
 
-
 import React, { Component } from "react";
-import ReactDOM from 'react-dom';
 import CSSTransitionGroup from 'react-addons-css-transition-group';
+import ReactDOM from 'react-dom';
+import {
+  BrowserRouter as Router,
+  Route,
+  Link
+} from 'react-router-dom'
 import MainPage from  "./components/MainPage";
-
+import AddEvent from './components/AddEvent';
 
 class App extends Component {
 
@@ -18,7 +22,12 @@ class App extends Component {
   render() {
     const { animationName } = this.state;
     return (
-      <MainPage />
+      <Router>
+        <div>
+          <Route exact path="/" component={MainPage}/>
+          <Route path="/addevent" component={AddEvent}/>
+        </div>
+     </Router>
     );
   };
 };

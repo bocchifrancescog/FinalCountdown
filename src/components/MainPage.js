@@ -9,10 +9,12 @@ class MainPage extends React.Component {
         Main Page
         <div className="ui bottom fixed menu large one item">
           <div className="item">
-            <div className="ui circular basic blue button">Add a new Event!</div>
+            <div className="ui circular basic blue button">
+              Add event!
+            </div>
           </div>
         </div>
-  </div>
+      </div>
     );
   };
 };
