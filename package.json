@@ -9,8 +9,12 @@
     "babel-preset-react": "^6.3.13",
     "classnames": "^2.2.3",
     "react": "^15.3.0",
-    "react-addons-css-transition-group": "^15.3.0",
+    "react-addons-css-transition-group": "^15.6.0",
+    "react-datepicker": "^0.48.0",
+    "react-day-picker": "^6.0.5",
     "react-dom": "^15.3.0",
+    "react-infinite-calendar": "^2.3.1",
+    "react-router-dom": "^4.1.1",
     "react-tappable": "^0.8.4",
     "webpack": "^1.12.12",
     "webpack-dev-server": "^1.14.1"
@@ -21,7 +25,8 @@
     "elementtree": "^0.1.6",
     "replace": "^0.3.0",
     "style-loader": "^0.13.0",
-    "webpack-merge": "^0.7.3"
+    "webpack-merge": "^0.7.3",
+    "semantic-ui": "^2.2.10"
   },
   "scripts": {
     "android": "cordova run android",

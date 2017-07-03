@@ -1,5 +1,6 @@
 import React from "react";
 import Tappable from 'react-tappable';
+import { Link } from 'react-router-dom'
 
 class MainPage extends React.Component {
 
@@ -10,7 +11,7 @@ class MainPage extends React.Component {
         <div className="ui bottom fixed menu large one item">
           <div className="item">
             <div className="ui circular basic blue button">
-              Add event!
+               <Link to='/addevent'>Add Event!</Link>
             </div>
           </div>
         </div>

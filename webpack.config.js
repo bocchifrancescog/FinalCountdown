@@ -21,7 +21,6 @@ const common = {
       {
         test: /\.css$/,
         loaders: ['style', 'css?url=false'],
-        include: PATHS.src,
       },
       {
         test: /\.jsx?$/,
