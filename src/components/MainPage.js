@@ -7,7 +7,7 @@ class MainPage extends React.Component {
   render() {
     return (
       <div className="ui container">
-        Main Page
+        Main Page!!
         <div className="ui bottom fixed menu large one item">
           <div className="item">
             <div className="ui circular basic blue button">
