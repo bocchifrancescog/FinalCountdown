@@ -1,6 +1,7 @@
-import React from "react";
-import Tappable from 'react-tappable';
+import React from "react"
+import Tappable from 'react-tappable'
 import { Link } from 'react-router-dom'
+import Footer from './Footer'
 
 class MainPage extends React.Component {
 
@@ -8,13 +9,11 @@ class MainPage extends React.Component {
     return (
       <div className="ui container">
         Main Page!!
-        <div className="ui bottom fixed menu large one item">
-          <div className="item">
+        <Footer>
             <div className="ui circular basic blue button">
-               <Link to='/addevent'>Add Event!</Link>
+               <Link to='/addevent'>Add a new Event!</Link>
             </div>
-          </div>
-        </div>
+        </Footer>
       </div>
     );
   };
