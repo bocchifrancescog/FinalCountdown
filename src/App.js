@@ -10,6 +10,9 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {animationName: 'push'};
+    var db = null;
+
+
   }
 
   render() {
