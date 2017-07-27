@@ -39,6 +39,7 @@ class AddEvent extends React.Component {
     });
   }
   addEventClick(event){
+    event.preventDefault();
 
     var client = new Client();
     var tmpThis = this;
@@ -48,10 +49,8 @@ class AddEvent extends React.Component {
       'color': 'blue'
     },function(){
       // on success callback
-    //    window.history.pushState( {} , 'Home', '/' );
-    // THIS DOES NOT WORK. STILL NEED TO FIND A SOLUTION!!
-      tmpThis.context.router.history.push("/");
-      //tmpThis.context.router.transitionTo("/");
+       // go Home
+       tmpThis.props.history.push('/');
     });
     // Todo check the outcome
 

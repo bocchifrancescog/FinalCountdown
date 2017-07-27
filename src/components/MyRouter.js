@@ -10,7 +10,7 @@ class MyRouter extends Component {
 
   render() {
     return (
-           <Router>
+           <Router history={history}>
                <div>
                 <Route exact path="/" component={MainPage}/>
                 <Route path="/addevent" component={AddEvent}/>

@@ -16,12 +16,13 @@ export function Client(){
     this.getEvents = function(onSuccessCallback){
         eventMgr.readAll(function(request){
 
-            console.log(request.result);
+            //console.log(request.result);
 
             // taking only the future ones
             var res = [];
             var yesterday = new Date();
             yesterday.setDate(yesterday.getDate() - 1);
+            yesterday.setHours(23,59,59);
             for (var i=0;i<request.result.length;i++){
                 var tmp = request.result[i];
                 if (tmp.when > yesterday){
